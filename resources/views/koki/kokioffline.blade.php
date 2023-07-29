@@ -75,7 +75,6 @@ tr:nth-child(even) {
 <div class="w3-main" style="margin-left:300px">
 
 <header id="">
-
 <div class="w3-row-padding">
 <div class="w3-container">
     <h1><b>Tabel Daftar Orderan Offline</b></h1>
