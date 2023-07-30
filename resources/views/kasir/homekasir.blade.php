@@ -92,21 +92,23 @@ tr:nth-child(even) {
     <div class="w3-row-padding">
     <table class="table">
         <tr>
+        <th>Nama Pelanggan</th>
         <th>Pesanan</th>
         <th>Harga satuan</th>
         <th>Qty</th>
         <th>Total Harga per Menu</th>
         </tr>
-        @foreach($tambahmakanan as $tambahmakanan)
+        @foreach($orderoffline as $orderoffline)
         <tr>
-        <td>{{$tambahmakanan->nama_prdk}}</td>
-        <td>Rp.{{$tambahmakanan->harga}},00</td>
-        <td>{{$tambahmakanan->qty}}</td>
-        <td>Rp.{{$tambahmakanan->qty * $tambahmakanan->harga}},00</td>
+        <td>{{$orderoffline->nama}}</td>
+        <td>{{$orderoffline->pesanan}}</td>
+        <td>Rp.{{$orderoffline->harga}},00</td>
+        <td>{{$orderoffline->qty}}</td>
+        <td>Rp.{{$orderoffline->qty * $orderoffline->harga}},00</td>
         </tr>
         @endforeach
         </table>
-        <tr><h3>Total Harga <b> Rp {{$total_orderan->totalorderan}},00 </b></h3>
+        <tr><h3>Total Harga <b> Rp {{$orderoffline->qty * $orderoffline->harga}},00 </b></h3>
         <a href="/downloadPDF/cetakinvoice"><button type="button" class="btn btn-default btn-lg w3-red">Cetak Invoice</button></a>
 </div>
 

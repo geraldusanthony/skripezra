@@ -93,6 +93,7 @@ tr:nth-child(even) {
     <div class="w3-row-padding">
     <table class="table">
         <tr>
+        <th>Nama Pelanggan</th>
         <th>Pesanan</th> 
         <th>Qty</th>
         <th>Harga Satuan</th>
@@ -100,6 +101,7 @@ tr:nth-child(even) {
         </tr>
         @foreach($orderoffline as $orderoffline)
         <tr>
+        <td>{{$orderoffline->nama}}</td>
         <td>{{$orderoffline->pesanan}}</td>
           <td>{{$orderoffline->qty}}</td>
           <td>Rp.{{$orderoffline->harga}},00</td>
