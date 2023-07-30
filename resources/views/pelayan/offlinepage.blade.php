@@ -130,6 +130,12 @@ tr:nth-child(even) {
                                             </div>
                                         </div>
                                     </div>
+                                    <label for="name" class="cols-sm-2 control-label">Nama Pelanggan</label>
+                                        <div class="cols-sm-10">
+                                            <div class="input-group">
+                                            <input id="exampleInputEmail1" type="text" placeholder="" class="form-control" name="nama" required autocomplete="" autofocus />
+                                            </div>
+                                            </div>
                                     <div class="form-group">
                                         <label for="email" class="cols-sm-2 control-label">Qty</label>
                                         <div class="cols-sm-10">
@@ -144,7 +150,6 @@ tr:nth-child(even) {
                                     <label for="name" class="cols-sm-2 control-label">Harga</label>
                                         <div class="cols-sm-10">
                                             <div class="input-group">
-                          
                                             <input id="exampleInputEmail1" type="text" placeholder="" class="form-control" name="harga" required autocomplete="" autofocus />
                                             </div>
                                             </div>

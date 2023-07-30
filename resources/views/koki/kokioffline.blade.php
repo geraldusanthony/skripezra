@@ -75,6 +75,7 @@ tr:nth-child(even) {
 <div class="w3-main" style="margin-left:300px">
 
 <header id="">
+
 <div class="w3-row-padding">
 <div class="w3-container">
     <h1><b>Tabel Daftar Orderan Offline</b></h1>
@@ -90,7 +91,7 @@ tr:nth-child(even) {
         <tr>
         <td>{{$orderoffline->id}}</td>
         <td>{{$orderoffline->created_at}}</td>
-          <td>{{$orderoffline->nama_pelanggan}}</td>
+          <td>{{$orderoffline->nama}}</td>
           <td>{{$orderoffline->pesanan}}</td>
           <td>{{$orderoffline->qty}}</td>         
         </tr>
